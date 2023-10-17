@@ -26,5 +26,5 @@ See issue [here](https://github.com/typst/packages/pull/162) (thanks to jeffa5).
 
 ## TODO
 
-* Pass argument to choose whether or not to put ordinals in superscript.
+* Pass argument to choose whether or not to put ordinals in superscript, [issue link](https://github.com/extua/nth/issues/1).
 
