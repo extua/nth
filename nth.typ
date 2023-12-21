@@ -1,9 +1,11 @@
 #let nth(ordinal-num, sup: bool) = {
-  let ordinal-str = if type(ordinal-num) == int {
+// Conditinally define ordinal-num, and if it's an integer change it to a string 
+let ordinal-str = if type(ordinal-num) == int {
     str(ordinal-num)
   } else {
     ordinal-num
   }
+// Main if-else tree for this function
   let ordinal-suffix = if ordinal-str.ends-with(regex("1[0-9]")) {
     "th"
   } else if ordinal-str.last() == "1" {
@@ -15,6 +17,7 @@
   } else {
     "th"
   }
+// Check whether sup attribute is set, and if so return suffix superscripted
   if sup == true {
    return ordinal-str + super(ordinal-suffix)
   } else {
@@ -22,6 +25,7 @@
   }
 }
 
+// define nths function, which is just nth with sup attribute applied
 #let nths(ordinal) = {
   nth(ordinal, sup: true)
 }
