@@ -1,6 +1,6 @@
 # Nth
 
-Provides a function `#nth()` which takes a number and returns it suffixed by an english ordinal.
+Provides functions `#nth()` and `#nths()` which take a number and return it suffixed by an english ordinal.
 
 This package is named after the nth [LaTeX macro](https://ctan.org/pkg/nth) by Donald Arseneau.
 
@@ -9,22 +9,17 @@ This package is named after the nth [LaTeX macro](https://ctan.org/pkg/nth) by D
 Include this line in your document to import the package.
 
 ```typst
-#import "@preview/nth:0.2.0": nth
+#import "@preview/nth:0.2.0": *
 ```
 
 Then, you can use `#nth()` to markup ordinal numbers in your document.
 
-For example, writing `#nth(1)` shows 1<sup>st</sup>,  
-`#nth(2)` shows 2<sup>nd</sup>,  
-`#nth(3)` shows 3<sup>rd</sup>,  
-`#nth(4)` shows 4<sup>th</sup>,  
-and `#nth(11)` shows 11<sup>th</sup>.
+For example, `#nth(1)` shows 1st,  
+`#nth(2)` shows 2nd,  
+`#nth(3)` shows 3rd,  
+`#nth(4)` shows 4th,  
+and `#nth(11)` shows 11th.
 
-_Please use version 0.2.0 as version 0.1.0 is broken!_
+If you want the ordinal to be in superscript, use `#nths` with an 's' at the end.
 
-See issue [here](https://github.com/typst/packages/pull/162) (thanks to jeffa5).
-
-## TODO
-
-* Pass argument to choose whether or not to put ordinals in superscript, [issue link](https://github.com/extua/nth/issues/1).
-
+For example, `#nths(1)` shows 1<sup>st</sup>.
