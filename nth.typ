@@ -1,4 +1,4 @@
-#let nth(ordinal-num) = {
+#let nth(ordinal-num, sup: bool) = {
   let ordinal-str = str(ordinal-num)
   let ordinal-suffix = if ordinal-str.ends-with(regex("1[0-9]")) {
     "th"
@@ -11,5 +11,13 @@
   } else {
     "th"
   }
-  ordinal-str + super(ordinal-suffix)
+  if sup == true {
+    ordinal-str + super(ordinal-suffix)
+  } else {
+    ordinal-str + ordinal-suffix
+  }
+}
+
+#let nths(ordinal) = {
+  nth(ordinal, sup: true)
 }
