@@ -12,9 +12,9 @@
     "th"
   }
   if sup == true {
-    ordinal-str + super(ordinal-suffix)
+   return ordinal-str + super(ordinal-suffix)
   } else {
-    ordinal-str + ordinal-suffix
+   return ordinal-str + ordinal-suffix
   }
 }
 
