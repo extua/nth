@@ -1,3 +1,11 @@
+## 1.0.1 - 2024-06-20
+
+Only minor manifest changes in this update, the package code is unchanged.
+
+### Changed
+* Added 'text' category and keywords for integration with Typst Universe (commit [30869a7](https://github.com/extua/nth/commit/30869a7843c2c03307699394b510d628ed9df18c)).
+* Added other authors to license statement (commit [1ff47b0](https://github.com/extua/nth/commit/1ff47b0efec88caf7a404a4e8eafe48e101cd163)), and link to author github accounts in package manifest (commits [e1ea73a](https://github.com/extua/nth/commit/e1ea73af9b7a9940bf71883413dd9cb5031f2fea) and [a729a64](https://github.com/extua/nth/commit/a729a640c3d2f7e89e3b1390b9a37f6ed28c9889)).
+
 ## 1.0.0 - 2023-12-21
 
 ### Changed

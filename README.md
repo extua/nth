@@ -9,7 +9,7 @@ This package is named after the nth [LaTeX macro](https://ctan.org/pkg/nth) by D
 Include this line in your document to import the package.
 
 ```typst
-#import "@preview/nth:1.0.0": *
+#import "@preview/nth:1.0.1": *
 ```
 
 Then, you can use `#nth()` to markup ordinal numbers in your document.
